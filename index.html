@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Wine Survey Form</h1>
+      <p id="description">
+        Please take a moment to provide your feedback.
+      </p>
+    </header>
+
+    <main id="container">
+      <!-- FORM -->
+      <form id="survey-form">
+        <fieldset id="demo">
+          <!-- NAME -->
+          <label for="name" id="name-label">Name*</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            minlength="2"
+            maxlength="70"
+            placeholder="Enter your name."
+            required
+          />
+
+          <!-- EMAIL -->
+          <label for="email" id="email-label">Email*</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            minlength="4"
+            maxlength="255"
+            placeholder="Enter your email."
+            required
+          />
+
+          <!-- AGE -->
+          <label for="number" id="number-label">Age*</label>
+          <input
+            type="number"
+            id="number"
+            class="form-control"
+            min="21"
+            max="117"
+            placeholder="Enter your age."
+            required
+          />
+        </fieldset>
+
+        <!-- WINE TYPE -->
+        <fieldset>
+          <p id="wine-type" class="legend">
+            What is your favorite type of wine?
+          </p>
+          <select name="dropdown" id="dropdown" class="form-control" required>
+            <option value="na" disabled selected value>Select a type...</option>
+            <option value="Red">Red</option>
+            <option value="White">White</option>
+            <option value="Rose">Ros&eacute;</option>
+            <option value="Sparkling">Sparkling</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Unsure">Unsure</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <!-- Checkboxes -->
+          <p id="country-question" class="legend">
+            Your favorite wines come from which of these countries?
+            <span id="clue">(choose up to 3)</span>
+          </p>
+          <label
+            ><input
+              name="country"
+              value="France"
+              type="checkbox"
+              class="input-checkbox"
+              checked
+            />France</label
+          >
+          <label
+            ><input
+              name="country"
+              value="Italy"
+              type="checkbox"
+              class="input-checkbox"
+            />Italy</label
+          >
+          <label
+            ><input
+              name="country"
+              value="Spain"
+              type="checkbox"
+              class="input-checkbox"
+            />Spain</label
+          >
+          <label
+            ><input
+              name="country"
+              value="USA"
+              type="checkbox"
+              class="input-checkbox"
+            />USA</label
+          >
+          <label
+            ><input
+              name="country"
+              value="Argentina"
+              type="checkbox"
+              class="input-checkbox"
+            />Argentina</label
+          >
+          <label
+            ><input
+              name="country"
+              value="Chile"
+              type="checkbox"
+              class="input-checkbox"
+            />Chile</label
+          >
+          <label
+            ><input
+              name="country"
+              value="Australia"
+              type="checkbox"
+              class="input-checkbox"
+            />Australia</label
+          >
+          <label
+            ><input
+              name="country"
+              value="Germany"
+              type="checkbox"
+              class="input-checkbox"
+            />Germany</label
+          >
+          <label
+            ><input
+              name="country"
+              value="New Zealand"
+              type="checkbox"
+              class="input-checkbox"
+            />New Zealand</label
+          >
+          <label
+            ><input
+              name="country"
+              value="South Africa"
+              type="checkbox"
+              class="input-checkbox"
+            />South Africa</label
+          >
+          <label
+            ><input
+              name="country"
+              value="Other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other</label
+          >
+        </fieldset>
+        <!--  RADIO BUTTONS  -->
+        <fieldset>
+          <p id="blends-question" class="legend">Do you like wine blends?</p>
+          <label>
+            <input
+              name="blends"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="blends"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+            />Depends</label
+          >
+          <label>
+            <input
+              name="blends"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+          <label>
+            <input
+              name="blends"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+            />Not Sure</label
+          >
+        </fieldset>
+        <!-- FEEDBACK -->
+        <fieldset>
+          <p id="feedback" class="legend">
+            Would you like to share any other wine preferences?
+          </p>
+          <textarea
+            name="comments"
+            id="comments"
+            class="form-control"
+            cols="30"
+            rows="10"
+            maxlength="280"
+            placeholder="Enter your feedback."
+          ></textarea>
+        </fieldset>
+        <!-- BUTTON -->
+        <fieldset>
+          <button type="submit" id="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>&copy;2020, PSM</footer>
+  </body>
+</html>
