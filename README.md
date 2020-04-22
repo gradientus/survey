@@ -11,8 +11,6 @@ If you find any issues, please contact the author.
 ## Author
 
 Phil Mauracher  
-[Github](https:/github.com/gradientus)
-
 
 ## License
 
