@@ -148,6 +148,7 @@ button {
 button:hover {
   background-color: greenyellow;
   color: black;
+  cursor: pointer;
 }
 
 footer {
